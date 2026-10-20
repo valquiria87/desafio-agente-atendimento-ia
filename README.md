@@ -1,19 +1,33 @@
-#Caso 1 
-Agente de Atendimento com IA para Criadores de Conteúdo. 
+# Caso 1 — Agente de Atendimento com IA para Criadores de Conteúdo
 
-##Objetivo: 
-desenvolver e testar um agente de atendimento com IA para auxiliar criadores do TikTok, Instagram e YouTube.
+## Objetivo
 
-##Ferramentas: 
-Google Antigravity, engenharia de prompts e GitHub. 
+Desenvolver e testar um agente de atendimento com IA para auxiliar criadores de conteúdo do TikTok, Instagram e YouTube.
 
-##Testes realizados:
-1. Pergunta sobre serviços: o agente solicitou mais contexto sobre a necessidade do cliente. 
-2. Pergunta sobre preços: o agente não informou um valor inventado e solicitou mais informações. 
-3. Pergunta sobre o status do pedido: o agente solicitou dados para identificar o pedido. 
+## Ferramentas
 
-##Resultados: 
-os testes ajudaram a avaliar o comportamento do agente e identificar melhorias necessárias. 
+- Google Antigravity
+- Engenharia de prompts
+- GitHub
 
-##Melhorias identificadas: 
-definir uma lista oficial de serviços, integrar um sistema real para consultar pedidos e encaminhar situações incertas para atendimento humano.
+## Testes realizados
+
+1. Pergunta sobre serviços.
+2. Pergunta sobre preços.
+3. Pergunta sobre o status de um pedido.
+
+## Resultados
+
+Os testes ajudaram a avaliar o comportamento do agente e a identificar melhorias necessárias.
+
+## Melhorias identificadas
+
+- Definir uma lista oficial de serviços autorizados.
+- Integrar o agente a um sistema real para consultar pedidos.
+- Encaminhar situações incertas para atendimento humano.
+- Evitar solicitar dados pessoais desnecessários.
+- Não afirmar que uma consulta foi realizada sem confirmar o acesso ao sistema.
+
+## Conclusão
+
+O projeto demonstra a aplicação prática da engenharia de prompts na criação de agentes de IA para atendimento ao cliente. Os testes também permitiram identificar limitações e oportunidades de melhoria antes de uma futura implementação real.
