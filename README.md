@@ -22,6 +22,10 @@ Desenvolver e testar um workflow de atendimento com inteligência artificial par
 5. Quando necessário, os dados são registrados em uma planilha Google Sheets.
 6. A resposta é devolvida pelo webhook.
 
+## Workflow
+
+![AI Customer Support Agent Workflow](workflow-agente-atendimento-ia.png)
+
 ## Testes realizados
 
 Foram avaliados os seguintes cenários:
