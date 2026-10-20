@@ -92,10 +92,13 @@ Os testes demonstram que um agente de IA precisa de instruções claras, valida�
 
 As melhorias implementadas priorizam a confiabilidade das informações, a proteção dos dados do cliente e a transparência sobre as limitações do sistema.
 
+**Resultados alcançados:** O agente foi testado em consultas sobre serviços, preços, pedidos, reembolsos e saudações. O campo `precisa_atendimento_humano` classificou corretamente os cenários testados, distinguindo solicitações comuns daquelas que precisam de análise humana.
+
 **Limitação atual:** O workflow recebe mensagens por webhook e gera respostas com IA. O encaminhamento para atendimento humano e a consulta a pedidos ainda não estão integrados a sistemas reais.
 
 **Próximas melhorias:**
-- Testar novamente a consulta sobre o status de um pedido.
-- Implementar uma rota de encaminhamento para atendimento humano.
+- Implementar um encaminhamento real para atendimento humano.
+- Criar uma fonte controlada de informações sobre serviços e preços.
+- Ampliar os testes para identificar possíveis falhas na classificação das mensagens.
 - Criar uma fonte controlada de informações sobre serviços e preços.
 - Ampliar os testes com diferentes mensagens e situações.
