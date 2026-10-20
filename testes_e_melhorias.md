@@ -43,6 +43,7 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 **Resultado após a melhoria:** O agente solicitou o número do pedido ou o e-mail utilizado na compra para que a equipe possa confirmar o status, sem alegar que realizou uma consulta.
 
 **Status:** Aprovado após ajuste.
+
 ## Teste 4 — Reclamação e pedido de reembolso
 
 **Pergunta:** Paguei por um serviço e não recebi. Quero meu dinheiro de volta.
@@ -54,6 +55,7 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 **Resultado após a melhoria:** O agente demonstrou empatia, informou que o caso precisava ser analisado pela equipe humana e solicitou um dado para identificar a compra, sem prometer o reembolso.
 
 **Status:** Aprovado após ajuste.
+
 ## Teste 5 — Classificação de solicitações para atendimento humano
 
 **Objetivo:** Identificar automaticamente mensagens que precisam de análise humana.
@@ -69,7 +71,21 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 **Teste adicional — Consulta sobre pedido:** O agente informou que o status precisava ser confirmado pela equipe humana e solicitou o número do pedido ou o e-mail da compra. O campo `precisa_atendimento_humano` retornou `true`.
 
 **Resultado:** Os testes de reclamação e consulta de pedido foram classificados corretamente como solicitações que exigem atendimento humano.
+
 **Status:** Testes iniciais aprovados; a lógica de classificação pode ser aprimorada.
+
+## Teste 6 — Saudação simples
+
+**Pergunta:** Olá, tudo bem?
+
+**Resultado:** O agente respondeu de forma cordial e perguntou como poderia ajudar.
+
+**Classificação:** O campo `precisa_atendimento_humano` retornou `false`.
+
+**Avaliação:** A saudação foi respondida sem encaminhamento desnecessário.
+
+**Status:** Aprovado.
+
 ## Conclusão
 
 Os testes demonstram que um agente de IA precisa de instruções claras, validação das respostas e limites bem definidos para evitar informações comerciais incorretas ou promessas que não pode cumprir.
