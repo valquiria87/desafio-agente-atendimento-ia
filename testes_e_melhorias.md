@@ -54,7 +54,19 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 **Resultado após a melhoria:** O agente demonstrou empatia, informou que o caso precisava ser analisado pela equipe humana e solicitou um dado para identificar a compra, sem prometer o reembolso.
 
 **Status:** Aprovado após ajuste.
+## Teste 5 — Classificação de solicitações para atendimento humano
 
+**Objetivo:** Identificar automaticamente mensagens que precisam de análise humana.
+
+**Implementação:** Foi adicionado um nó IF para verificar se a resposta do agente contém a expressão "equipe humana". Dois nós Edit Fields definem o campo `precisa_atendimento_humano` como `true` ou `false`, conforme o ramo executado.
+
+**Teste com reclamação e reembolso:** O campo retornou `true`, identificando corretamente a necessidade de atendimento humano.
+
+**Teste com consulta sobre preço:** O campo retornou `false`, classificando a resposta como atendimento comum.
+
+**Limitação:** A classificação depende do texto gerado pela IA e ainda não realiza encaminhamento real para uma equipe humana.
+
+**Status:** Testes iniciais aprovados; a lógica de classificação pode ser aprimorada.
 ## Conclusão
 
 Os testes demonstram que um agente de IA precisa de instruções claras, validação das respostas e limites bem definidos para evitar informações comerciais incorretas ou promessas que não pode cumprir.
