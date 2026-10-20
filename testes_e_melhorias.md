@@ -38,10 +38,11 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 
 **Avaliação:** A resposta poderia criar uma expectativa de consulta que o agente não consegue cumprir.
 
-**Melhoria proposta:** Informar a limitação de acesso e não afirmar que uma consulta foi realizada sem confirmação.
+**Melhoria implementada:** Foram reforçadas as instruções para não afirmar que consultou pedidos sem acesso a um sistema real.
 
-**Status:** Melhoria pendente de novo teste após os ajustes atuais.
+**Resultado após a melhoria:** O agente solicitou o número do pedido ou o e-mail utilizado na compra para que a equipe possa confirmar o status, sem alegar que realizou uma consulta.
 
+**Status:** Aprovado após ajuste.
 ## Teste 4 — Reclamação e pedido de reembolso
 
 **Pergunta:** Paguei por um serviço e não recebi. Quero meu dinheiro de volta.
