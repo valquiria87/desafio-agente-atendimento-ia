@@ -65,6 +65,7 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 **Teste com consulta sobre preço:** O campo retornou `false`, classificando a resposta como atendimento comum.
 
 **Limitação:** A classificação depende do texto gerado pela IA e ainda não realiza encaminhamento real para uma equipe humana.
+
 **Teste adicional — Consulta sobre pedido:** O agente informou que o status precisava ser confirmado pela equipe humana e solicitou o número do pedido ou o e-mail da compra. O campo `precisa_atendimento_humano` retornou `true`.
 
 **Resultado:** Os testes de reclamação e consulta de pedido foram classificados corretamente como solicitações que exigem atendimento humano.
