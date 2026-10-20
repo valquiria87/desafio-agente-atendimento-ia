@@ -129,8 +129,11 @@ Se aparecer `Error in workflow`, abra **Executions** no n8n, selecione a execuç
 
 ## Status da implementação
 
-A configuração das credenciais e do nó Google Sheets foi realizada durante o desenvolvimento. O teste final de gravação ainda precisa ser validado e, caso falhe, corrigido antes de declarar a integração como concluída.
+## Status da implementação
 
+**Integração validada com sucesso.** O workflow recebeu uma solicitação de reembolso, gerou a resposta do agente, classificou a necessidade de atendimento humano e registrou os dados na planilha Google Sheets.
+
+O teste confirmou o funcionamento do registro de data, mensagem do cliente, resposta do agente e indicador de atendimento humano.
 ## Aprendizado
 
 A integração de serviços externos exige mais do que conectar nós: é necessário configurar APIs, permissões, OAuth 2.0, usuários de teste e tratamento de falhas. Documentar esses passos torna o processo mais reproduzível e facilita a resolução de problemas em projetos futuros.
