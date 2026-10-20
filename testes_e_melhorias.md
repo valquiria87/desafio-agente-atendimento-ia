@@ -86,6 +86,21 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 
 **Status:** Aprovado.
 
+## Teste 7 — Registro de solicitações no Google Sheets
+
+**Mensagem enviada:** “Quero solicitar um reembolso do meu pedido.”
+
+**Resultado esperado:**
+- O agente identifica a necessidade de atendimento humano.
+- A resposta solicita o número do pedido ou o e-mail utilizado na compra.
+- Os dados da solicitação são registrados na planilha `Registro de Atendimento IA`.
+
+**Resultado obtido:** Teste realizado com sucesso. O webhook retornou `status: sucesso`, o agente gerou a resposta esperada e uma nova linha foi adicionada à planilha com os dados da solicitação.
+
+**Aprendizado:** A integração com o Google Sheets permite manter um registro das solicitações que precisam de análise humana, facilitando o acompanhamento posterior.
+
+**Limitação:** O registro não significa que a solicitação foi enviada automaticamente a um atendente. O encaminhamento humano ainda precisa ser implementado.
+
 ## Conclusão
 
 Os testes demonstram que um agente de IA precisa de instruções claras, validação das respostas e limites bem definidos para evitar informações comerciais incorretas ou promessas que não pode cumprir.
