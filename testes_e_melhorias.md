@@ -101,19 +101,33 @@ Avaliar o comportamento do agente de atendimento com IA, identificar limitaçõe
 
 **Limitação:** O registro não significa que a solicitação foi enviada automaticamente a um atendente. O encaminhamento humano ainda precisa ser implementado.
 
+## Teste 8 — Saudação comum sem registro na planilha
+
+**Mensagem enviada:** “Olá, tudo bem?”
+
+**Resultado esperado:**
+- O agente responde cordialmente.
+- O campo `precisa_atendimento_humano` retorna `False`.
+- Nenhuma linha é adicionada à planilha de solicitações humanas.
+
+**Resultado obtido:** Teste realizado com sucesso. O webhook retornou `status: sucesso`, o agente respondeu à saudação e a planilha permaneceu sem alterações.
+
+**Aprendizado:** O registro condicional evita adicionar saudações e outras interações comuns à planilha destinada às solicitações que precisam de análise humana.
+
 ## Conclusão
 
 Os testes demonstram que um agente de IA precisa de instruções claras, validação das respostas e limites bem definidos para evitar informações comerciais incorretas ou promessas que não pode cumprir.
 
 As melhorias implementadas priorizam a confiabilidade das informações, a proteção dos dados do cliente e a transparência sobre as limitações do sistema.
 
-**Resultados alcançados:** O agente foi testado em consultas sobre serviços, preços, pedidos, reembolsos e saudações. O campo `precisa_atendimento_humano` classificou corretamente os cenários testados, distinguindo solicitações comuns daquelas que precisam de análise humana.
+**Resultados alcançados:** O agente foi testado em consultas sobre serviços, preços, pedidos, reembolsos e saudações. O campo `precisa_atendimento_humano` classificou corretamente os cenários testados. A integração com o Google Sheets também foi validada: solicitações que precisam de atendimento humano são registradas na planilha, enquanto saudações comuns não geram registros desnecessários.
 
-**Limitação atual:** O workflow recebe mensagens por webhook e gera respostas com IA. O encaminhamento para atendimento humano e a consulta a pedidos ainda não estão integrados a sistemas reais.
+**Limitação atual:** O workflow recebe mensagens por webhook, gera respostas com IA e registra solicitações classificadas para atendimento humano. Entretanto, o encaminhamento efetivo para um atendente e a consulta a pedidos ainda não estão integrados a sistemas reais.
 
 **Próximas melhorias:**
 - Implementar um encaminhamento real para atendimento humano.
 - Criar uma fonte controlada de informações sobre serviços e preços.
 - Ampliar os testes para identificar possíveis falhas na classificação das mensagens.
+- Implementar uma integração com um sistema de pedidos para consultar informações reais com segurança.
 - Criar uma fonte controlada de informações sobre serviços e preços.
 - Ampliar os testes com diferentes mensagens e situações.
